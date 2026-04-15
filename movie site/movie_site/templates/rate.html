@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>给电影评分</title>
+</head>
 
+<body style="
+    font-family: Arial;
+    text-align: center;
+    margin-top: 80px;
+    background-color: #f5f5f5;
+">
+
+    <h1>🎬 给电影打分</h1>
+
+    <form method="post">
+        <p>请输入评分（0 ~ 10）：</p>
+
+        <input 
+            type="number" 
+            name="score" 
+            min="0" 
+            max="10" 
+            step="0.5"
+            required
+            style="padding:10px; font-size:16px;"
+        >
+
+        <br><br>
+
+        <button 
+            type="submit"
+            style="padding:10px 20px; font-size:16px; cursor:pointer;"
+        >
+            提交评分
+        </button>
+    </form>
+
+    <br>
+
+    <a href="/" style="text-decoration:none;">⬅ 返回首页</a>
+
+</body>
+</html>
